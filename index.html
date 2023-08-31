@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JS/script.js"></script>
+    <title>Mini Project Falih</title>
+</head>
+
+<body>
+    <!--HEADER SECTION-->
+    <header class="header">
+        <img class="logorevou" alt="Logo Revou" src="./logo.jpg">
+
+        <div class="nav">
+            <a class="navigasi" href="">Home</a>
+            <a class="navigasi" href="">My Profil</a>
+            <a class="navigasi" href="">Achievement</a>
+            <a class="navigasi" href="">Message Us</a>
+        </div>
+    </header>
+
+    <hr class="costum-hr">
+
+    <!--MAIN CONTENT-->
+    <main style="margin-left: 5%;">
+        <h2 style="position: relative;padding: 1px;">
+            Hi <span id="name">Falih</span>, Welcome to Website
+        </h2>
+        <p>Ini adalah website latihan pertama saya</p>
+
+        <p>Saya belajar banyak di traning RevoU ini. Semoga skill web development ku 
+            lebih berkembang untuk masa yang akan datang</p>
+        <p>Sambil berjumpa dilain kesempatan</p>
+
+    </main>
+
+    <hr class="costum-hr">
+
+    <!--Achievement-->
+    <main style="margin-left: 5%;">
+        <img class="logoF" alt="Logo Falih" src="/F.png">
+
+    </main>
+
+    <hr class="costum-hr">
+
+    <!--Message Us-->
+    <div class="message-us" style="margin: 5%;">
+        <div style="flex-basis: 400px;">
+            <form style="padding: 0; margin: 0;" name="message-us" onsubmit="return validateform()">
+                <div class="row">
+                    <div class="col-25">
+                      <label for="name">Nama <span style="float: right;">:</span></label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="name-input" name="name-input" placeholder="Nama Kamu..">
+                    </div>
+
+                    <div class="col-25">
+                        <label for="tgl">Tanggal Lahir <span style="float: right;">:</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="tgl" name="tanggallahir" placeholder="Tanggal Lahir..">
+                    </div>
+
+                    <div class="col-25">
+                        <label for="jkelamin">Jenis Kelamin <span style="float: right;">:</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="jkelamin" name="jeniskelamin">
+                    </div>
+
+                    <div class="col-25">
+                      <label for="pesan">Pesan <span style="float: right;">:</span></label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="pesan" name="pesan" placeholder="Tuliskan Pesan.." style="height: 50px;"></textarea>
+                    </div>
+
+                    <br>
+                    <input id="submit" type="submit" value="Submit" style="width: 100%;">
+
+                    
+                </div>
+            </form>
+        </div>
+        <div style="margin-left: 100px;">
+            <div class="hasilpesan">
+                <div>Nama : <span id="name"></span>. </div>
+                <div>Tanggal Lahir : <span id="tgl"></span>. </div>
+                <div>Jenis Kelamin : <span id="jkelamin"></span>-</span>. </div>
+                <div>Pesan : <span id="pesan"></span>. </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
